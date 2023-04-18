@@ -13,6 +13,7 @@ body{
     margin : 0px;
     height : 100%;
     width : 100%;
+    overflow: hidden;
 }
 p{
     word-break : keep-all;
@@ -24,7 +25,8 @@ p{
     justify-content: center;
     align-items: center;
     height : 5%;
-    /* padding : 10px */
+    z-index: 2;
+    
 }
 .article-wrap{
     height : 45%;
@@ -93,3 +95,16 @@ p{
     margin-top : 10px;
     font-size : 1em
 }
+
+
+#circle1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width : 10px;
+    height : 10px;
+    background-color: #738e5c;
+    transform: translate(-50%, -50%) scale(0.1); /* 초기 크기와 위치 설정 */
+    border-radius: 50%; /* 원 모양 */
+    z-index: 1; /* 가장 위에 나타나도록 z-index 설정 */
+  }
