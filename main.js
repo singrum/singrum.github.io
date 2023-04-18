@@ -34,12 +34,15 @@ class app{
         
     }
     circleAnimation(x,y,btnType){
+        console.log(x,y)
         const circle = document.createElement('div');
         
         circle.id = "circle1"
         document.body.appendChild(circle);
         circle.style.left = x + 'px';
         circle.style.top = y + 'px';
+        console.log(circle.style.left)
+        console.log(circle.style.top)
         let themeColor;
         switch(btnType){
             case "profile":
