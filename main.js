@@ -12,6 +12,7 @@ class app{
 
         const showProfile = event=>{
             this.circleAnimation(event.clientX, event.clientY, "#738e5c")
+            
         }
         const showInterdesign = event=>{
             this.circleAnimation(event.clientX, event.clientY, "#e85913")
@@ -33,30 +34,35 @@ class app{
         
     }
     circleAnimation(x,y,color){
-        let circle = document.createElement('div');
+        const circle = document.createElement('div');
         
         circle.id = "circle1"
         document.body.appendChild(circle);
         circle.style.left = x + 'px';
         circle.style.top = y + 'px';
         circle.style.backgroundColor = color;
-
+        circle.style.transform = 'translate(-50%, -50%)';
         const maxRad = Math.hypot(window.innerWidth, window.innerHeight) * 2
-        new TWEEN.Tween({width: 0, height: 0})
+        return new TWEEN.Tween({width: 0, height: 0})
         .to({width: maxRad, height: maxRad}, 700)
         .onUpdate(function (object) {
-            
             circle.style.width = object.width + "px";
             circle.style.height = object.height + "px";
         })
         .onComplete(()=>{
-            circle.remove()
-            
+            circle.remove();
+
+            const newWindow = document.createElement('div');
+            newWindow.classList.add("btn-window")
+            document.body.appendChild(newWindow);
+            newWindow.style.backgroundColor = color
+
         })
         .start();
-        circle.style.transform = 'translate(-50%, -50%)';
+        
         
     }
+    
 
     render() {
 		TWEEN.update();
