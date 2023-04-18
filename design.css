@@ -21,6 +21,9 @@ p{
     padding : 20px 30px
 }
 .header{
+    position : absolute;
+    width : 100%;
+    top : 0;
     display : flex;
     justify-content: center;
     align-items: center;

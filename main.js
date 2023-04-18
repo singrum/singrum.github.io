@@ -11,31 +11,39 @@ class app{
         this.articleBtn = document.querySelector("#article-btn");
 
         const showProfile = event=>{
-            this.circleAnimation(event)
+            this.circleAnimation(event.clientX, event.clientY, "#738e5c")
+        }
+        const showInterdesign = event=>{
+            this.circleAnimation(event.clientX, event.clientY, "#e85913")
+        }
+
+        const showWebapp = event=>{
+            this.circleAnimation(event.clientX, event.clientY, "#f0c14a")
+        }
+        const showArticle = event=>{
+            this.circleAnimation(event.clientX, event.clientY, "#8e6197")
         }
 
 
 
         this.profileBtn.addEventListener("click", showProfile);
-        // this.interdesignBtn.addEventListener("click", showInterdesign)
-        // this.webappBtn.addEventListener("click", showWebapp)
-        // this.articleBtn.addEventListener("click", showArticle)
+        this.interdesignBtn.addEventListener("click", showInterdesign)
+        this.webappBtn.addEventListener("click", showWebapp)
+        this.articleBtn.addEventListener("click", showArticle)
         
     }
-    circleAnimation(event){
+    circleAnimation(x,y,color){
         let circle = document.createElement('div');
         
         circle.id = "circle1"
         document.body.appendChild(circle);
-        console.log(event)
-        let x = event.clientX;
-        let y = event.clientY;
         circle.style.left = x + 'px';
         circle.style.top = y + 'px';
+        circle.style.backgroundColor = color;
 
-        const maxRad = Math.max(window.innerWidth, window.innerHeight) * 2
+        const maxRad = Math.hypot(window.innerWidth, window.innerHeight) * 2
         new TWEEN.Tween({width: 0, height: 0})
-        .to({width: maxRad, height: maxRad}, 500)
+        .to({width: maxRad, height: maxRad}, 700)
         .onUpdate(function (object) {
             
             circle.style.width = object.width + "px";
