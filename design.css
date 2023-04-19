@@ -138,10 +138,45 @@ p{
 }
 
 .content{
-    width : 100%;
+    width : auto;
     height : 95%;
+    top : 5%;
     position : absolute;
     bottom : 0px;
     opacity : 0;
     overflow-y: scroll;
+    padding : 20px;
+}
+
+
+.content-title{
+    display : flex;
+    align-items: center;
+    font-size : 2em;
+    font-weight: 500;
+}
+.content-area{
+    margin : 1em 0
+}
+
+.profile-name{
+    font-size : 1.4em;
+    font-weight : bold
+}
+
+
+.small-title{
+    font-size: 1.4em;
+    font-weight: 200;
+}
+.round-card{
+    background-color: #fff;
+    color:#738e5c;
+    border-radius: 100000px;
+    padding: 0 10px;
+    margin: 0px 0em;
+    height : 1.4em;
+    display: inline-flex;
+    align-items: center;
+    
 }
