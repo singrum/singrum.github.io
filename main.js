@@ -90,7 +90,7 @@ class app{
             document.body.appendChild(newWindow);
             newWindow.style.backgroundColor = themeColor
             newWindow.appendChild(content);
-            content.innerHTML
+            content.innerHTML = this.contentLoad(btnType)
 
         })
         .chain(showContent)
@@ -99,6 +99,26 @@ class app{
 
         
         
+    }
+    contentLoad(btnType){
+        switch(btnType){
+            case "profile":
+                return `
+                    
+                `
+            case "interdesign":
+                return `
+
+                `
+            case "webapp":
+                return `
+
+                `
+            case "article":
+                return `
+
+                `
+        }
     }
 
     

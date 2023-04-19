@@ -7,16 +7,26 @@ html{
     height : 100%;
     width : 100%;
     font-family : sans-serif;
-    overflow: hidden;
+    
 }
 
 body{
-    
+    position: fixed;
     margin : 0px;
     height : 100%;
     width : 100%;
-    
+    overflow: hidden;
+    touch-action:none;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 p{
     word-break : keep-all;
     margin : 0;
@@ -31,10 +41,11 @@ p{
     align-items: center;
     height : 5%;
     z-index: 3;
-    
 }
 .article-wrap{
-    height : 45%;
+    position : absolute;
+    top : 5%;
+    height : 40%;
     overflow-y: scroll;
 }
 .padder{
@@ -48,12 +59,14 @@ p{
 
 .wrapper{
     position:absolute;
+    
     bottom : 0px;
     width : 100%;
-    height : 50%;
+    height : 55%;
 }
 .menu-list{
-    height:100%;
+    
+    height : 100%;
     width : 100%;
     display:grid;
     grid-template-columns: 50% 50%;
@@ -95,17 +108,18 @@ p{
     font-size:1.6em;
     word-break : keep-all;
     line-height: 1.2em;
+    display: flex;
+    align-items: center;
 }
 .menu .eng{
-    margin-top : 10px;
+    margin-top : 5px;
     font-size : 1em
 }
 
 
+
 #circle1{
-    position: relative;
-    left: 50%;
-    top: 50%;
+    position: absolute;
     width : 10px;
     height : 10px;
     background-color: #738e5c;
@@ -129,4 +143,5 @@ p{
     position : absolute;
     bottom : 0px;
     opacity : 0;
+    overflow-y: scroll;
 }
