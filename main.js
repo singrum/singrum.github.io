@@ -68,7 +68,7 @@ class app{
         content.classList.add("content")
 
         const showContent = new TWEEN.Tween({opacity:0})
-        .to({opacity:1},5000)
+        .to({opacity:1},500)
         .onUpdate(object=>{
             content.style.opacity = object.opacity
         })
@@ -104,7 +104,7 @@ class app{
         switch(btnType){
             case "profile":
                 return `
-                    
+                    asdf
                 `
             case "interdesign":
                 return `

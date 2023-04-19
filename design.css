@@ -1,6 +1,13 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
   /* #dfdbda */
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+  }
 html{
     background-color: #151515;
     color:#fff;
@@ -46,6 +53,7 @@ p{
     position : absolute;
     top : 5%;
     height : 40%;
+    width : 100%;
     overflow-y: scroll;
 }
 .padder{
@@ -140,6 +148,7 @@ p{
 .content{
     width : auto;
     height : 95%;
+    width :100%;
     top : 5%;
     position : absolute;
     bottom : 0px;
