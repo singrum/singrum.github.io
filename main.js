@@ -91,6 +91,13 @@ class app{
             newWindow.style.backgroundColor = themeColor
             newWindow.appendChild(content);
             content.innerHTML = this.contentLoad(btnType)
+
+
+            let state = {page_id : 2, data : 'test'};
+            let url = location.origin + `/?${btnType}`;
+            history.pushState(state, null, url)
+            console.log(history)
+
             this.setEvent(btnType)
 
         })
