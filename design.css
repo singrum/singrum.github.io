@@ -65,6 +65,15 @@ p{
     font-size : 2em
 }
 
+
+.overlay{
+    width : 100%;
+    height : 40%;
+    position : fixed;
+    top : 5%;
+    pointer-events: none;
+    background: linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(21,21,21,0) 30%, rgba(21,21,21,0) 70%, rgba(21,21,21,1) 100%);
+}
 .wrapper{
     position:absolute;
     
@@ -207,3 +216,4 @@ p{
     display : inline;
     border-radius: 10px;
 }
+
