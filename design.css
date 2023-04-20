@@ -148,13 +148,13 @@ p{
 .content{
     width : auto;
     height : 95%;
-    width :100%;
+    width : calc(100% - 40px);
     top : 5%;
     position : absolute;
     bottom : 0px;
     opacity : 0;
     overflow-y: scroll;
-    padding : 20px;
+    padding : 0px 20px;
 }
 
 
@@ -188,4 +188,22 @@ p{
     display: inline-flex;
     align-items: center;
     
+}
+
+.interdesign-area {
+    
+    width: 100%;
+    --auto-grid-min-size: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 10px;
+    
+
+}
+
+.interdesign-image{
+    aspect-ratio : 1 / 1;
+    background-color:#8e6197;
+    display : inline;
+    border-radius: 10px;
 }
