@@ -34,15 +34,14 @@ class app{
         
     }
     circleAnimation(x,y,btnType){
-        console.log(x,y)
+        
         const circle = document.createElement('div');
         
         circle.id = "circle1"
         document.body.appendChild(circle);
         circle.style.left = x + 'px';
         circle.style.top = y + 'px';
-        console.log(circle.style.left)
-        console.log(circle.style.top)
+
         let themeColor;
         switch(btnType){
             case "profile":
@@ -72,6 +71,13 @@ class app{
         .onUpdate(object=>{
             content.style.opacity = object.opacity
         })
+        .onComplete(()=>{
+
+            // const url = new URL(location);
+            // url.searchParams.set("menu", btnType);
+            // history.pushState({menu : btnType}, "", url);
+        
+        })
 
 
         new TWEEN.Tween({width: 0, height: 0})
@@ -93,10 +99,8 @@ class app{
             content.innerHTML = this.contentLoad(btnType)
 
 
-            let state = {page_id : 2, data : 'test'};
-            let url = location.origin + `/?${btnType}`;
-            history.pushState(state, null, url)
-            console.log(history)
+            
+            
 
             this.setEvent(btnType)
 
@@ -195,7 +199,11 @@ class app{
     setEvent(btnType){
         document.querySelector("#backward").addEventListener('click', ()=>{
             document.querySelector(".btn-window").remove()
+
         }, false)
+        window.addEventListener("popstate", ()=>{
+            document.querySelector(".btn-window").remove()
+        })
         switch(btnType){
             case "profile":
                 return;
