@@ -1,8 +1,18 @@
 import * as TWEEN from "/node_modules/@tweenjs/tween.js/dist/tween.esm.js"
 class app{
     constructor(){
+        history.pushState({}, "", new URL(location));
+        // this.queryStringSearch();
         this.setupButtonEvent();
         requestAnimationFrame(this.render.bind(this));
+
+    }
+    queryStringSearch(){
+        const urlParams = new URLSearchParams(window.location.search);
+        const state = urlParams.get('state');
+        console.log(state)
+        if(!state){
+        }
     }
     setupButtonEvent(){
         this.profileBtn = document.querySelector("#profile-btn");
@@ -73,9 +83,9 @@ class app{
         })
         .onComplete(()=>{
 
-            // const url = new URL(location);
-            // url.searchParams.set("menu", btnType);
-            // history.pushState({menu : btnType}, "", url);
+            const url = new URL(location);
+            url.searchParams.set("menu", btnType);
+            history.pushState({menu : btnType}, "", url);
         
         })
 
@@ -97,21 +107,13 @@ class app{
             newWindow.style.backgroundColor = themeColor
             newWindow.appendChild(content);
             content.innerHTML = this.contentLoad(btnType)
-
-
-            
-            
-
             this.setEvent(btnType)
 
         })
         .chain(showContent)
         .start();
-
-
-        
-        
     }
+    
     contentLoad(btnType){
         switch(btnType){
             case "profile":
@@ -197,13 +199,11 @@ class app{
         }
     }
     setEvent(btnType){
-        document.querySelector("#backward").addEventListener('click', ()=>{
+        const removeNewWindow = ()=>{
             document.querySelector(".btn-window").remove()
-
-        }, false)
-        window.addEventListener("popstate", ()=>{
-            document.querySelector(".btn-window").remove()
-        })
+        }
+        document.querySelector("#backward").addEventListener('click', removeNewWindow, false)
+        window.addEventListener("popstate", removeNewWindow,false)
         switch(btnType){
             case "profile":
                 return;
