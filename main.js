@@ -74,7 +74,7 @@ class app{
 
 
         const content = document.createElement('div');
-        content.classList.add("content")
+        content.classList.add("content", "scroll")
 
         const showContent = new TWEEN.Tween({opacity:0})
         .to({opacity:1},500)
@@ -119,21 +119,27 @@ class app{
             case "profile":
                 return `
                 <div class="content-title">
-                <span class="material-symbols-outlined" style ="font-size : 1em" id="backward">
+                <span class="material-symbols-outlined" style ="font-size : 1em" id="backward" onclick="document.querySelector('.content').remove()">
                     arrow_back_ios
                 </span>
                 소개</div>
             <div class="content-area">
-                <div class="profile-name">
-                    강효민
+                <div class="profile-about-grid">
+                    <div class ="col-1">이름</div>
+                    <div class="profile-name">
+                        강효민
+                    </div>
+                    <div class ="col-1">생일</div>
+                    <div class="profile-birth">
+                        2002.04.14
+                    </div>
+                    <div class ="col-1">학력</div>
+                    <div class="profile-edu">
+                        서강대학교 2학기 휴학
+                    </div>
+                    <div class ="col-1">이메일</div>
+                    <div class="profile-email">miamiq0000@gmail.com</div>
                 </div>
-                <div class="profile-birth">
-                    2002.04.14
-                </div>
-                <div class="profile-edu">
-                    서강대학교 2학기 휴학
-                </div>
-                <div class="profile-email">miamiq0000@gmail.com</div>
             </div>
             <div class ="content-area">
                 <div class ="small-title">
@@ -163,6 +169,7 @@ class app{
                     <span class = "round-card">Java</span>
                     <span class = "round-card">Calculus</span>
                     <span class = "round-card">Linear Algebra</span>
+                    <span class = "round-card">Discrete Mathematics</span>
                     <span class = "round-card">Number Theory</span>
                     <span class = "round-card">combinatorial game theory</span>
                     <span class = "round-card">Classical Mechanics</span>
@@ -170,7 +177,7 @@ class app{
             </div>
             <div class ="content-area">
                 <div class ="small-title">
-                    관심사
+                    관심 있는 것
                 </div>
                 
                 <div class="profile-knowlege" style="line-height: 1.7em;">
@@ -186,15 +193,78 @@ class app{
                 
             case "interdesign":
                 return `
-
+                <div class="content-title">
+                <span class="material-symbols-outlined" style ="font-size : 1em" id = "backward">
+                    arrow_back_ios
+                    </span>
+                    인터랙션 디자인</div>
+            <div class="content-area">
+                <div class="interdesign-area">
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image"></span>
+    
+                </div>    
+            </div>
                 `
             case "webapp":
                 return `
-
+                <div class="content-title">
+                <span class="material-symbols-outlined" style ="font-size : 1em"id = "backward">
+                    arrow_back_ios
+                    </span>
+                    웹 앱</div>
+            <div class="content-area">
+                <div class="webapp-area"id = "backward">
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+                    <span class="webapp-image"></span>
+    
+                </div>    
+            </div>
+            
                 `
             case "article":
                 return `
-
+                <div class="article-area">
+                    <div class="article-container">
+                        <span class="article-image">
+                        </span>
+                        <span class="article-title">
+                            asdfdsfdsfafdsa
+                        </span>
+                    </div>
+                    <div class="article-container">
+                        <span class="article-image">
+                        </span>
+                        <span class="article-title">
+                            asdfdsfdsfafdsa
+                        </span>
+                    </div>
+                    <div class="article-container">
+                        <span class="article-image">
+                        </span>
+                        <span class="article-title">
+                            asdfdsfdsfafdsa
+                        </span>
+                    </div>
+                </div>
                 `
         }
     }

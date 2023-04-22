@@ -126,6 +126,8 @@ p{
     margin : 0;
     font-size:1.4rem;
     word-break : keep-all;
+    
+    
     line-height: 1.8rem;
     display: flex;
     
@@ -213,7 +215,7 @@ p{
 
 }
 
-.interdesign-image{
+.interdesign-image, .webapp-image{
     aspect-ratio : 1 / 1;
     background-color:#8e6197;
     display : inline;
