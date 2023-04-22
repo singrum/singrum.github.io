@@ -120,8 +120,8 @@ class app{
             case "profile":
                 return `
                 <div class="content-title">
-                <span class="material-symbols-outlined" style ="font-size : 1em" id="backward" onclick="document.querySelector('.btn-window').remove()">
-                    arrow_back_ios
+                <span id="backward" onclick="document.querySelector('.btn-window').remove()">
+                    <svg id ="backward-svg" fill = "#ffffff" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z"/></svg>
                 </span>
                 소개</div>
             <div class="content-area">
@@ -194,11 +194,13 @@ class app{
                 
             case "interdesign":
                 return `
-                            <div class="content-title">
-                <span class="material-symbols-outlined"  id="backward" style ="font-size : 1em" onclick="document.querySelector('.btn-window').remove()">
-                    arrow_back_ios
-                    </span>
-                    인터랙션 디자인</div>
+                <div class="content-title">
+                <span id="backward" onclick="document.querySelector('.btn-window').remove()">
+                    <svg id ="backward-svg" fill = "#ffffff" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z"/></svg>
+                </span>
+                
+                인터랙션 디자인
+            </div>
             <div class="content-area">
                 <div class="interdesign-area">
                     <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/candy_factory.jpg')" onclick="window.open('https://singrum.github.io/ammojsnote/notes/note08_candy_factory', '_blank')"'></span>
@@ -220,10 +222,11 @@ class app{
             case "webapp":
                 return `
                 <div class="content-title" style="color : #8e6197">
-                <span class="material-symbols-outlined" id="backward" style ="font-size : 1em" onclick="document.querySelector('.btn-window').remove()">
-                    arrow_back_ios
-                    </span>
-                    웹 앱</div>
+                <span id="backward" onclick="document.querySelector('.btn-window').remove()">
+                    <svg id ="backward-svg" fill = "#8e6197" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z"/></svg>
+                </span>
+                웹 앱
+            </div>
             <div class="content-area">
                 <div class="webapp-area">
                     <span class="webapp-image" style = "background-image : url('src/webapp-resized/ggeugle.jpg')" onclick="window.open('https://singrum.github.io/ggeugle', '_blank')"'></span>
@@ -236,7 +239,11 @@ class app{
             case "article":
                 return `
                 <div class="content-title" style="color : #f0c14a">
-                <span class="material-symbols-outlined" id="backward" style ="font-size : 1em" onclick="document.querySelector('.btn-window').remove()">arrow_back_ios</span>글</div>
+                <span id="backward" onclick="document.querySelector('.btn-window').remove()">
+                    <svg id ="backward-svg" fill = "#f0c14a" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z"/></svg>
+                </span>
+                글
+            </div>
             <div class="content-area scroll">
                 <div class="article-area">
                     <div class="article-container">
