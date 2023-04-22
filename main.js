@@ -106,6 +106,7 @@ class app{
             document.body.appendChild(newWindow);
             newWindow.style.backgroundColor = themeColor
             newWindow.appendChild(content);
+            
             content.innerHTML = this.contentLoad(btnType)
             this.setEvent(btnType)
 
@@ -119,7 +120,7 @@ class app{
             case "profile":
                 return `
                 <div class="content-title">
-                <span class="material-symbols-outlined" style ="font-size : 1em" id="backward" onclick="document.querySelector('.content').remove()">
+                <span class="material-symbols-outlined" style ="font-size : 1em" id="backward" onclick="document.querySelector('.btn-window').remove()">
                     arrow_back_ios
                 </span>
                 소개</div>
@@ -193,48 +194,39 @@ class app{
                 
             case "interdesign":
                 return `
-                <div class="content-title">
-                <span class="material-symbols-outlined" style ="font-size : 1em" id = "backward">
+                            <div class="content-title">
+                <span class="material-symbols-outlined"  id="backward" style ="font-size : 1em" onclick="document.querySelector('.btn-window').remove()">
                     arrow_back_ios
                     </span>
                     인터랙션 디자인</div>
             <div class="content-area">
                 <div class="interdesign-area">
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
-                    <span class="interdesign-image"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/candy_factory.jpg')" onclick="window.open('https://singrum.github.io/ammojsnote/notes/note08_candy_factory', '_blank')"'></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/dandelion.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note30_dandelion', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/domino_simulator.jpg')" onclick="window.open('https://singrum.github.io/ammojsnote/notes/note03_domino_simulator', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/growing_block.jpg')" onclick="window.open('https://singrum.github.io/growingblock2/', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/fractal_tree.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note19_tree', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/minecraft_bee.jpg')" onclick="window.open('https://singrum.github.io/ammojsnote/notes/note07_mc_bee', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/morphing_globe.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note18_globe', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/nottetris_clone.jpg')" onclick="window.open('https://singrum.github.io/not-tetris-2-clone', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/patrick_with_horse.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note20_patrick_with_horse', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/pixelation.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note25_pixel', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('../src/interdesign/wave.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note24_wave1', '_blank')"></span>
     
                 </div>    
             </div>
                 `
             case "webapp":
                 return `
-                <div class="content-title">
-                <span class="material-symbols-outlined" style ="font-size : 1em"id = "backward">
+                <div class="content-title" style="color : #8e6197">
+                <span class="material-symbols-outlined" id="backward" style ="font-size : 1em" onclick="document.querySelector('.btn-window').remove()">
                     arrow_back_ios
                     </span>
                     웹 앱</div>
             <div class="content-area">
-                <div class="webapp-area"id = "backward">
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
-                    <span class="webapp-image"></span>
+                <div class="webapp-area">
+                    <span class="webapp-image" style = "background-image : url('../src/webapp/ggeugle.jpg')" onclick="window.open('https://singrum.github.io/ggeugle', '_blank')"'></span>
+                    <span class="webapp-image" style = "background-image : url('../src/webapp/lifedori.jpg')" onclick="window.open('https://singrum.github.io/lifedori', '_blank')"'></span>
     
                 </div>    
             </div>
@@ -242,29 +234,35 @@ class app{
                 `
             case "article":
                 return `
+                <div class="content-title" style="color : #f0c14a">
+                <span class="material-symbols-outlined" id="backward" style ="font-size : 1em" onclick="document.querySelector('.btn-window').remove()">arrow_back_ios</span>글</div>
+            <div class="content-area scroll">
                 <div class="article-area">
                     <div class="article-container">
                         <span class="article-image">
                         </span>
                         <span class="article-title">
-                            asdfdsfdsfafdsa
+                            준비중..
                         </span>
                     </div>
                     <div class="article-container">
                         <span class="article-image">
                         </span>
                         <span class="article-title">
-                            asdfdsfdsfafdsa
+                            준비중..
                         </span>
                     </div>
                     <div class="article-container">
                         <span class="article-image">
                         </span>
                         <span class="article-title">
-                            asdfdsfdsfafdsa
+                            준비중..
                         </span>
                     </div>
                 </div>
+                
+     
+            </div>
                 `
         }
     }
@@ -272,7 +270,8 @@ class app{
         const removeNewWindow = ()=>{
             document.querySelector(".btn-window").remove()
         }
-        document.querySelector("#backward").addEventListener('click', removeNewWindow, false)
+        
+
         window.addEventListener("popstate", removeNewWindow,false)
         switch(btnType){
             case "profile":
