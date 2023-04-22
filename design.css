@@ -112,11 +112,11 @@ p{
 }
 .menu3{
     background-color: #f0c14a;
-    color : #8e6197
+    color : rgb(142, 97, 151)
 }
 .menu4{
     background-color: #8e6197;
-    color : #f0c14a
+    color : rgb(240, 193, 74)
     
 }
 .text-wrap {
@@ -174,7 +174,7 @@ p{
     display : flex;
     align-items: center;
     font-size : 1.4em;
-    font-weight: bold;
+    /* font-weight: bold; */
     
 }
 .content-area{
