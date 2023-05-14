@@ -1,7 +1,7 @@
 import * as TWEEN from "/node_modules/@tweenjs/tween.js/dist/tween.esm.js"
 class app{
     constructor(){
-        history.pushState({}, "", new URL(location));
+        // history.pushState({}, "", new URL(location));
         // this.queryStringSearch();
         this.setupButtonEvent();
         requestAnimationFrame(this.render.bind(this));
@@ -77,7 +77,7 @@ class app{
         content.classList.add("content", "scroll")
 
         const showContent = new TWEEN.Tween({opacity:0})
-        .to({opacity:1},500)
+        .to({opacity:1},200)
         .onUpdate(object=>{
             content.style.opacity = object.opacity
         })
@@ -157,6 +157,7 @@ class app{
                     <span class = "round-card">Ammo.js</span>
                     <span class = "round-card">Tween.js</span>
                     <span class = "round-card">Spline</span>
+                    <span class = "round-card">GLSL</span>
                 </div>
             </div>
             <div class ="content-area">
@@ -173,6 +174,7 @@ class app{
                     <span class = "round-card">Discrete Mathematics</span>
                     <span class = "round-card">Number Theory</span>
                     <span class = "round-card">combinatorial game theory</span>
+                    <span class = "round-card">Classical Mechanics</span>
                     <span class = "round-card">Classical Mechanics</span>
                 </div>
             </div>
