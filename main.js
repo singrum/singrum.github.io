@@ -233,14 +233,14 @@ class app{
                 <div class="webapp-area">
                     
                     <div class="webapp-container">
-                        <span class="webapp-image" style = "background-image : url('../src/webapp-resized/ggeugle.jpg')" onclick="window.open('https://singrum.github.io/ggeugle', '_blank')"'>
+                        <span class="webapp-image" style = "background-image : url('src/webapp-resized/ggeugle.jpg')" onclick="window.open('https://singrum.github.io/ggeugle', '_blank')"'>
                         </span>
                         <span class="webapp-title">
                             끝말잇기 검색엔진
                         </span>
                     </div>
                     <div class="webapp-container">
-                        <span class="webapp-image" style = "background-image : url('../src/webapp-resized/lifedori.jpg')" onclick="window.open('https://singrum.github.io/lifedori', '_blank')"'>
+                        <span class="webapp-image" style = "background-image : url('src/webapp-resized/lifedori.jpg')" onclick="window.open('https://singrum.github.io/lifedori', '_blank')"'>
                         </span>
                         <span class="webapp-title">
                             사망일 계산기
