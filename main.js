@@ -203,6 +203,8 @@ class app{
             </div>
             <div class="content-area">
                 <div class="interdesign-area">
+                    <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/ferris_wheel.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note33_ferris_wheel', '_blank')"></span>
+                    <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/rainbow.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note32_rainbow', '_blank')"></span>
                     <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/candy_factory.jpg')" onclick="window.open('https://singrum.github.io/ammojsnote/notes/note08_candy_factory', '_blank')"'></span>
                     <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/dandelion.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note30_dandelion', '_blank')"></span>
                     <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/domino_simulator.jpg')" onclick="window.open('https://singrum.github.io/ammojsnote/notes/note03_domino_simulator', '_blank')"></span>
@@ -229,9 +231,21 @@ class app{
             </div>
             <div class="content-area">
                 <div class="webapp-area">
-                    <span class="webapp-image" style = "background-image : url('src/webapp-resized/ggeugle.jpg')" onclick="window.open('https://singrum.github.io/ggeugle', '_blank')"'></span>
-                    <span class="webapp-image" style = "background-image : url('src/webapp-resized/lifedori.jpg')" onclick="window.open('https://singrum.github.io/lifedori', '_blank')"'></span>
-    
+                    
+                    <div class="webapp-container">
+                        <span class="webapp-image" style = "background-image : url('../src/webapp-resized/ggeugle.jpg')" onclick="window.open('https://singrum.github.io/ggeugle', '_blank')"'>
+                        </span>
+                        <span class="webapp-title">
+                            끝말잇기 검색엔진
+                        </span>
+                    </div>
+                    <div class="webapp-container">
+                        <span class="webapp-image" style = "background-image : url('../src/webapp-resized/lifedori.jpg')" onclick="window.open('https://singrum.github.io/lifedori', '_blank')"'>
+                        </span>
+                        <span class="webapp-title">
+                            사망일 계산기
+                        </span>
+                    </div>
                 </div>    
             </div>
             
