@@ -148,16 +148,17 @@ class app{
                 </div>
                 
                 <div class="profile-knowlege" style="line-height: 1.7em;">
-                    <span class = "round-card">HTML5</span>
-                    <span class = "round-card">CSS3</span>
-                    <span class = "round-card">JavaScript</span>
-                    <span class = "round-card">Bootstrap5</span>
-                    <span class = "round-card">Matter.js</span>
-                    <span class = "round-card">Three.js</span>
-                    <span class = "round-card">Ammo.js</span>
-                    <span class = "round-card">Tween.js</span>
-                    <span class = "round-card">Spline</span>
-                    <span class = "round-card">GLSL</span>
+                <span class = "round-card">HTML5</span>
+                <span class = "round-card">CSS3</span>
+                <span class = "round-card">JavaScript</span>
+                <span class = "round-card">Bootstrap5</span>
+                <span class = "round-card">WebGL2</span>
+                <span class = "round-card">Matter.js</span>
+                <span class = "round-card">Three.js</span>
+                <span class = "round-card">Ammo.js</span>
+                <span class = "round-card">Tween.js</span>
+                <span class = "round-card">Spline</span>
+                <span class = "round-card">GLSL</span>
                 </div>
             </div>
             <div class ="content-area">
@@ -173,8 +174,7 @@ class app{
                     <span class = "round-card">Linear Algebra</span>
                     <span class = "round-card">Discrete Mathematics</span>
                     <span class = "round-card">Number Theory</span>
-                    <span class = "round-card">combinatorial game theory</span>
-                    <span class = "round-card">Classical Mechanics</span>
+                    <span class = "round-card">Combinatorial Game Theory</span>
                     <span class = "round-card">Classical Mechanics</span>
                 </div>
             </div>
