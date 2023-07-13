@@ -205,6 +205,7 @@ class app{
             </div>
             <div class="content-area">
                 <div class="interdesign-area">
+                    <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/BZpattern.jpg')" onclick="window.open('https://singrum.github.io/pixijsnote/notes/note1_BZ/BZ', '_blank')"></span>
                     <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/camouflage.jpg')" onclick="window.open('https://singrum.github.io/webGLnote/notes/note2_camouflage/camo', '_blank')"></span>
                     <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/saturn.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note40_Saturn/Saturn', '_blank')"></span>
                     <span class="interdesign-image" style = "background-image : url('src/interdesign-resized/screw.jpg')" onclick="window.open('https://singrum.github.io/threejsnote/notes/note38_screw_bar', '_blank')"></span>
