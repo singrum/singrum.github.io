@@ -159,6 +159,7 @@ class app{
                 <span class = "round-card">Tween.js</span>
                 <span class = "round-card">Spline</span>
                 <span class = "round-card">GLSL</span>
+                <span class = "round-card">Pixi.js</span>
                 </div>
             </div>
             <div class ="content-area">
