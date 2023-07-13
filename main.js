@@ -188,6 +188,7 @@ class app{
                     <span class = "round-card">웹 퍼블리싱</span>
                     <span class = "round-card">웹 디자인</span>
                     <span class = "round-card">인터랙션 디자인</span>
+                    <span class = "round-card">제너러티브 아트</span>
                     <span class = "round-card">3D 그래픽</span>
                     <span class = "round-card">게임 인공지능</span>
                     <span class = "round-card">XSS</span>
